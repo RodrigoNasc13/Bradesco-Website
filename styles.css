@@ -1,7 +1,39 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fontColor);
+    font-family: 'helvetica';
+}
+
 body {
-    font-family: 'monospace';
+    background: var(--bg);
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
 }
 
 ul {
-    font-family: 'helvética';
+    font-family: 'helvetica';
+}
+
+li {
+    list-style-type: circle;
+}
+
+.list {
+    list-style-type: square;
 }
