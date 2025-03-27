@@ -6,10 +6,13 @@ switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
     
     var className = document.body.className;
-    if (className == "dark-theme") {
-        this.textContent = "Light";
+
+    console.log(className);
+
+    if (className == "light-theme") {
+        this.textContent = "Dark";
     }
     else {
-        this.textContent = "Dark";
+        this.textContent = "Light";
     }
 });
